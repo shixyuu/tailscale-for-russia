@@ -328,7 +328,7 @@ main() {
 		exit 1
 	fi
 
-	TEST_URL="https://pkgs.tailscale.com/"
+	TEST_URL="https://tailscale.dsm-project.workers.dev/"
 	RC=0
 	TEST_OUT=$($CURL "$TEST_URL" 2>&1) || RC=$?
 	if [ $RC != 0 ]; then
